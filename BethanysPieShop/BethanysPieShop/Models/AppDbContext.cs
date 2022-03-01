@@ -17,7 +17,9 @@ namespace BethanysPieShop.Models
 
 		public DbSet<Category> Categories { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+		public DbSet<ShoppingCartItem> ShoppingCartItems { get; set; }
+
+		protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
